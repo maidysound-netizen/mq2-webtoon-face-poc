@@ -1,0 +1,924 @@
+title:
+  ko: 퍼실 선생님의 PoC 교실
+signature: mq2-webtoon-face-poc
+width: 800
+gap: 40
+langs:
+- ko
+panels:
+- image: panels/01.png
+  bubbles:
+  - type: narration
+    text:
+      ko: '오늘의 수업: 내 업무 어디에 AI를 넣을까?'
+    at:
+    - 0.5
+    - 0.12
+    pin: true
+    who: narration
+    width: 0.7
+  faces: []
+- image: panels/02.png
+  bubbles:
+  - type: speech
+    text:
+      ko: '제일 좋은 AI
+
+        모델이 뭐예요?'
+    at:
+    - 0.56
+    - 0.1
+    pin: true
+    who: hana
+    tail:
+    - 0.557
+    - 0.314
+    roomy: true
+  faces:
+  - - 0.365
+    - 0.204
+    - 0.746
+    - 0.493
+  - - 0.072
+    - 0.433
+    - 0.18
+    - 0.518
+- image: panels/03.png
+  bubbles:
+  - type: speech
+    text:
+      ko: '도구부터 고르면
+
+        아무도 안 써요'
+    at:
+    - 0.5
+    - 0.6
+    pin: true
+    who: facil
+    tail:
+    - 0.502
+    - 0.458
+    roomy: true
+  faces:
+  - - 0.306
+    - 0.045
+    - 0.699
+    - 0.476
+  - - 0.013
+    - 0.495
+    - 0.099
+    - 0.63
+  - - 0.844
+    - 0.485
+    - 0.928
+    - 0.577
+  - - 0.924
+    - 0.513
+    - 0.986
+    - 0.632
+  - - 0.177
+    - 0.51
+    - 0.252
+    - 0.601
+- image: panels/04.png
+  bubbles:
+  - type: speech
+    text:
+      ko: '먼저 내 일에서
+
+        병목을 찾는 거예요'
+    at:
+    - 0.38
+    - 0.64
+    pin: true
+    who: facil
+    tail:
+    - 0.38
+    - 0.448
+    roomy: true
+  faces:
+  - - 0.266
+    - 0.047
+    - 0.495
+    - 0.429
+- image: panels/05.png
+  bubbles:
+  - type: thought
+    text:
+      ko: 'PoC는 쓰이는 게 아니라
+
+        판단이 서는 게 목적…'
+    at:
+    - 0.48
+    - 0.54
+    pin: true
+    who: jun
+    tail:
+    - 0.487
+    - 0.418
+    roomy: true
+  faces:
+  - - 0.282
+    - 0.074
+    - 0.701
+    - 0.43
+  - - 0.803
+    - 0.401
+    - 0.885
+    - 0.459
+  - - 0.932
+    - 0.389
+    - 0.993
+    - 0.458
+  - - 0.01
+    - 0.407
+    - 0.096
+    - 0.505
+- image: panels/06.png
+  bubbles:
+  - type: narration
+    text:
+      ko: 검색 · 검사와 판독 · 분류와 배분 · 입력과 전사
+    at:
+    - 0.5
+    - 0.12
+    pin: true
+    who: narration
+    width: 0.7
+  faces: []
+- image: panels/07.png
+  bubbles:
+  - type: speech
+    text:
+      ko: '사진 수만 장에서
+
+        찾는 건 검사?'
+    at:
+    - 0.26
+    - 0.76
+    pin: true
+    who: hana
+    tail:
+    - 0.264
+    - 0.573
+    roomy: true
+  - type: speech
+    text:
+      ko: '아니, 찾는 거니까
+
+        검색!'
+    at:
+    - 0.74
+    - 0.8
+    pin: true
+    who: jun
+    tail:
+    - 0.697
+    - 0.514
+    roomy: true
+  faces:
+  - - 0.163
+    - 0.212
+    - 0.369
+    - 0.545
+  - - 0.571
+    - 0.084
+    - 0.776
+    - 0.437
+- image: panels/08.png
+  bubbles:
+  - type: speech
+    text:
+      ko: '정답!
+
+        등급을 매기면 검사예요'
+    at:
+    - 0.5
+    - 0.58
+    pin: true
+    who: facil
+    tail:
+    - 0.503
+    - 0.438
+    roomy: true
+  faces:
+  - - 0.319
+    - 0.043
+    - 0.691
+    - 0.451
+  - - 0.845
+    - 0.513
+    - 0.936
+    - 0.605
+  - - 0.118
+    - 0.493
+    - 0.187
+    - 0.565
+- image: panels/09.png
+  bubbles:
+  - type: speech
+    text:
+      ko: '만들기 전에
+
+        기준을 숫자로!'
+    at:
+    - 0.5
+    - 0.52
+    pin: true
+    who: facil
+    tail:
+    - 0.497
+    - 0.404
+    roomy: true
+  faces:
+  - - 0.291
+    - 0.082
+    - 0.7
+    - 0.415
+- image: panels/10.png
+  bubbles:
+  - type: speech
+    text:
+      ko: '결과 보고
+
+        정하면 안 돼요?'
+    at:
+    - 0.5
+    - 0.7
+    pin: true
+    who: hana
+    tail:
+    - 0.503
+    - 0.536
+    roomy: true
+  faces:
+  - - 0.264
+    - 0.047
+    - 0.745
+    - 0.561
+- image: panels/11.png
+  bubbles:
+  - type: speech
+    text:
+      ko: '그러면 기준이
+
+        결과 쪽으로 기울어요'
+    at:
+    - 0.3
+    - 0.62
+    pin: true
+    who: facil
+    tail:
+    - 0.284
+    - 0.437
+    roomy: true
+  - type: thought
+    text:
+      ko: '17개면 괜찮네…
+
+        하게 되는구나'
+    at:
+    - 0.62
+    - 0.2
+    pin: true
+    who: hana
+    tail:
+    - 0.715
+    - 0.456
+    roomy: true
+  faces:
+  - - 0.169
+    - 0.061
+    - 0.382
+    - 0.417
+  - - 0.641
+    - 0.278
+    - 0.89
+    - 0.682
+- image: panels/12.png
+  bubbles:
+  - type: narration
+    text:
+      ko: 후보는 크기 말고 성격이 다르게
+    at:
+    - 0.5
+    - 0.12
+    pin: true
+    who: narration
+    width: 0.7
+  - type: narration
+    text:
+      ko: 내 노트북 · 외부 서비스 · 지금 방식
+    at:
+    - 0.5
+    - 0.36
+    pin: true
+    who: narration
+    width: 0.7
+  faces: []
+- image: panels/13.png
+  bubbles:
+  - type: speech
+    text:
+      ko: '지금 방식도
+
+        후보예요?'
+    at:
+    - 0.54
+    - 0.54
+    pin: true
+    who: jun
+    tail:
+    - 0.538
+    - 0.427
+    roomy: true
+  faces:
+  - - 0.321
+    - 0.081
+    - 0.753
+    - 0.446
+- image: panels/14.png
+  bubbles:
+  - type: speech
+    text:
+      ko: '기준선이 이기면
+
+        그것도 결과예요'
+    at:
+    - 0.52
+    - 0.56
+    pin: true
+    who: facil
+    tail:
+    - 0.502
+    - 0.417
+    roomy: true
+  faces:
+  - - 0.316
+    - 0.043
+    - 0.669
+    - 0.424
+  - - 0.0
+    - 0.505
+    - 0.067
+    - 0.609
+  - - 0.852
+    - 0.49
+    - 0.94
+    - 0.582
+  - - 0.161
+    - 0.484
+    - 0.218
+    - 0.552
+  - - 0.781
+    - 0.491
+    - 0.84
+    - 0.554
+  - - 0.109
+    - 0.506
+    - 0.18
+    - 0.585
+  - - 0.071
+    - 0.494
+    - 0.125
+    - 0.555
+  - - 0.931
+    - 0.501
+    - 1.0
+    - 0.625
+  - - 0.229
+    - 0.491
+    - 0.273
+    - 0.552
+  - - 0.0
+    - 0.858
+    - 0.082
+    - 1.0
+- image: panels/15.png
+  bubbles:
+  - type: narration
+    text:
+      ko: '점수보다 먼저: 자료 유출, 라이선스'
+    at:
+    - 0.5
+    - 0.12
+    pin: true
+    who: narration
+    width: 0.7
+  faces: []
+- image: panels/16.png
+  bubbles:
+  - type: speech
+    text:
+      ko: '정확도 1등인데
+
+        탈락이에요?'
+    at:
+    - 0.62
+    - 0.66
+    pin: true
+    who: hana
+    tail:
+    - 0.377
+    - 0.593
+    roomy: true
+  - type: speech
+    text:
+      ko: '감점으로 하면
+
+        못 쓰는 게 1등 해요'
+    at:
+    - 0.34
+    - 0.2
+    pin: true
+    who: facil
+    tail:
+    - 0.595
+    - 0.308
+    roomy: true
+  faces:
+  - - 0.094
+    - 0.177
+    - 0.397
+    - 0.664
+  - - 0.613
+    - 0.046
+    - 0.852
+    - 0.457
+- image: panels/17.png
+  bubbles:
+  - type: thought
+    text:
+      ko: 'AGPL…
+
+        회사에선 조심'
+    at:
+    - 0.52
+    - 0.58
+    pin: true
+    who: jun
+    tail:
+    - 0.512
+    - 0.439
+    roomy: true
+  faces:
+  - - 0.321
+    - 0.038
+    - 0.693
+    - 0.455
+  - - 0.029
+    - 0.414
+    - 0.087
+    - 0.526
+  - - 0.928
+    - 0.433
+    - 0.972
+    - 0.537
+  - - 0.22
+    - 0.432
+    - 0.3
+    - 0.511
+- image: panels/18.png
+  bubbles:
+  - type: speech
+    text:
+      ko: 'softmax는 등수.
+
+        없어도 1등이 나와요'
+    at:
+    - 0.28
+    - 0.5
+    pin: true
+    who: facil
+    tail:
+    - 0.262
+    - 0.403
+    roomy: true
+  faces:
+  - - 0.136
+    - 0.21
+    - 0.369
+    - 0.391
+- image: panels/19.png
+  bubbles:
+  - type: speech
+    text:
+      ko: 'sigmoid는
+
+        절대평가!'
+    at:
+    - 0.5
+    - 0.7
+    pin: true
+    who: hana
+    tail:
+    - 0.502
+    - 0.543
+    roomy: true
+  faces:
+  - - 0.268
+    - 0.061
+    - 0.738
+    - 0.571
+  - - 0.027
+    - 0.492
+    - 0.145
+    - 0.635
+  - - 0.871
+    - 0.499
+    - 0.973
+    - 0.653
+  - - 0.148
+    - 0.463
+    - 0.236
+    - 0.556
+  - - 0.795
+    - 0.465
+    - 0.88
+    - 0.561
+  - - 0.765
+    - 0.469
+    - 0.815
+    - 0.542
+- image: panels/20.png
+  bubbles:
+  - type: sfx
+    text:
+      ko: 영차
+    at:
+    - 0.5
+    - 0.64
+    pin: true
+    size: 1.7
+  faces:
+  - - 0.296
+    - 0.128
+    - 0.63
+    - 0.551
+- image: panels/21.png
+  bubbles:
+  - type: speech
+    text:
+      ko: '다리가 화면에 없는데
+
+        각도가 20도래요'
+    at:
+    - 0.64
+    - 0.74
+    pin: true
+    who: jun
+    tail:
+    - 0.639
+    - 0.52
+    roomy: true
+  faces:
+  - - 0.501
+    - 0.039
+    - 0.776
+    - 0.504
+  - - 0.375
+    - 0.464
+    - 0.423
+    - 0.537
+  - - 0.024
+    - 0.437
+    - 0.059
+    - 0.542
+  - - 0.305
+    - 0.569
+    - 0.338
+    - 0.629
+- image: panels/22.png
+  bubbles:
+  - type: speech
+    text:
+      ko: '신뢰도를 안 봤죠?
+
+        오류 없이 틀리는 곳이에요'
+    at:
+    - 0.5
+    - 0.68
+    pin: true
+    who: facil
+    tail:
+    - 0.507
+    - 0.483
+    roomy: true
+  faces:
+  - - 0.265
+    - 0.066
+    - 0.755
+    - 0.464
+  - - 0.914
+    - 0.547
+    - 1.0
+    - 0.662
+  - - 0.0
+    - 0.514
+    - 0.067
+    - 0.644
+  - - 0.074
+    - 0.517
+    - 0.145
+    - 0.595
+  - - 0.794
+    - 0.515
+    - 0.864
+    - 0.582
+- image: panels/23.png
+  bubbles:
+  - type: narration
+    text:
+      ko: 임계값을 올리면 헛경보↓ 놓침↑
+    at:
+    - 0.5
+    - 0.12
+    pin: true
+    who: narration
+    width: 0.7
+  faces: []
+- image: panels/24.png
+  bubbles:
+  - type: speech
+    text:
+      ko: '놓치면 발행되니까
+
+        낮게!'
+    at:
+    - 0.26
+    - 0.76
+    pin: true
+    who: hana
+    tail:
+    - 0.261
+    - 0.57
+    roomy: true
+  - type: speech
+    text:
+      ko: '너무 낮으면
+
+        다 울려서 무시하고'
+    at:
+    - 0.34
+    - 0.2
+    pin: true
+    who: jun
+    tail:
+    - 0.594
+    - 0.332
+    roomy: true
+  faces:
+  - - 0.147
+    - 0.182
+    - 0.376
+    - 0.548
+  - - 0.606
+    - 0.073
+    - 0.857
+    - 0.496
+- image: panels/25.png
+  bubbles:
+  - type: sfx
+    text:
+      ko: 짝짝짝
+    at:
+    - 0.5
+    - 0.52
+    pin: true
+    size: 1.7
+  - type: speech
+    text:
+      ko: '정답은 없어요.
+
+        더 아픈 쪽을 막아요'
+    at:
+    - 0.5
+    - 0.72
+    pin: true
+    who: facil
+    tail:
+    - 0.503
+    - 0.48
+    roomy: true
+  faces:
+  - - 0.328
+    - 0.061
+    - 0.68
+    - 0.432
+  - - 0.0
+    - 0.495
+    - 0.094
+    - 0.616
+  - - 0.928
+    - 0.501
+    - 1.0
+    - 0.632
+  - - 0.792
+    - 0.475
+    - 0.866
+    - 0.555
+  - - 0.189
+    - 0.478
+    - 0.272
+    - 0.553
+  - - 0.222
+    - 0.475
+    - 0.274
+    - 0.538
+- image: panels/26.png
+  bubbles:
+  - type: speech
+    text:
+      ko: '모델이 95%…
+
+        지금 방식이 더 잘해요'
+    at:
+    - 0.52
+    - 0.6
+    pin: true
+    who: hana
+    tail:
+    - 0.516
+    - 0.482
+    roomy: true
+  faces:
+  - - 0.282
+    - 0.138
+    - 0.747
+    - 0.497
+  - - 0.898
+    - 0.437
+    - 0.951
+    - 0.512
+  - - 0.052
+    - 0.433
+    - 0.094
+    - 0.509
+  - - 0.33
+    - 0.449
+    - 0.411
+    - 0.508
+- image: panels/27.png
+  bubbles:
+  - type: speech
+    text:
+      ko: '틀리는 방식이 다르면
+
+        서로 검산할 수 있어요'
+    at:
+    - 0.3
+    - 0.62
+    pin: true
+    who: facil
+    tail:
+    - 0.277
+    - 0.442
+    roomy: true
+  - type: thought
+    text:
+      ko: '다른 컷만
+
+        보면 되겠다!'
+    at:
+    - 0.8
+    - 0.8
+    pin: true
+    who: hana
+    tail:
+    - 0.788
+    - 0.619
+    roomy: true
+  faces:
+  - - 0.164
+    - 0.082
+    - 0.364
+    - 0.42
+  - - 0.684
+    - 0.273
+    - 0.88
+    - 0.591
+- image: panels/28.png
+  bubbles:
+  - type: narration
+    text:
+      ko: 63컷 중 8컷만 확인
+    at:
+    - 0.5
+    - 0.08
+    pin: true
+    who: narration
+    width: 0.7
+  faces:
+  - - 0.625
+    - 0.424
+    - 0.692
+    - 0.489
+  - - 0.465
+    - 0.424
+    - 0.514
+    - 0.474
+  - - 0.36
+    - 0.425
+    - 0.407
+    - 0.476
+  - - 0.289
+    - 0.44
+    - 0.344
+    - 0.492
+  - - 0.445
+    - 0.543
+    - 0.502
+    - 0.603
+  - - 0.492
+    - 0.325
+    - 0.53
+    - 0.364
+  - - 0.288
+    - 0.535
+    - 0.342
+    - 0.592
+  - - 0.623
+    - 0.542
+    - 0.678
+    - 0.602
+  - - 0.514
+    - 0.449
+    - 0.562
+    - 0.497
+  - - 0.354
+    - 0.535
+    - 0.412
+    - 0.595
+  - - 0.698
+    - 0.32
+    - 0.756
+    - 0.376
+  - - 0.698
+    - 0.562
+    - 0.745
+    - 0.616
+  - - 0.292
+    - 0.326
+    - 0.351
+    - 0.385
+  - - 0.639
+    - 0.319
+    - 0.7
+    - 0.37
+  - - 0.513
+    - 0.555
+    - 0.556
+    - 0.596
+  - - 0.697
+    - 0.454
+    - 0.729
+    - 0.489
+  - - 0.529
+    - 0.353
+    - 0.56
+    - 0.387
+  - - 0.0
+    - 0.539
+    - 0.048
+    - 0.619
+- image: panels/29.png
+  bubbles:
+  - type: speech
+    text:
+      ko: '잘된다 ≠
+
+        잘된다는 걸 확인했다'
+    at:
+    - 0.5
+    - 0.76
+    pin: true
+    who: facil
+    tail:
+    - 0.495
+    - 0.489
+    roomy: true
+  faces:
+  - - 0.091
+    - 0.224
+    - 0.293
+    - 0.56
+  - - 0.386
+    - 0.065
+    - 0.598
+    - 0.422
+  - - 0.701
+    - 0.077
+    - 0.917
+    - 0.467
+- image: panels/30.png
+  bubbles:
+  - type: narration
+    text:
+      ko: '— 오늘의 회고: 기준을 넘지 못한 이유도 결과다 —'
+    at:
+    - 0.5
+    - 0.16
+    pin: true
+    who: narration
+    width: 0.7
+  faces: []

@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>퍼실 선생님의 PoC 교실</title>
+<meta name="description" content="AI 오케스트레이션이 적은 얼굴 좌표를 로컬 머리 탐지 모델로 검산한 PoC. 로컬에서 만든 30컷 샘플 웹툰으로 전체 과정을 보여 줍니다.">
+<style>
+:root{--bg:#faf8f5;--fg:#1d1b19;--muted:#6b655e;--card:#fff;--line:#e6e1da;--accent:#c2410c;--chip:#f1ede7}
+@media (prefers-color-scheme:dark){:root{--bg:#161412;--fg:#ece8e3;--muted:#a39b91;--card:#211e1b;--line:#35302b;--accent:#fb923c;--chip:#2b2723}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sans KR",sans-serif}
+main{max-width:1080px;margin:0 auto;padding:40px 16px 80px}
+h1{font-size:28px;line-height:1.3;margin:0 0 8px}
+h2{font-size:20px;margin:48px 0 12px;padding-top:16px;border-top:1px solid var(--line)}
+p{margin:8px 0}
+code{font-size:.9em}
+.muted{color:var(--muted)}
+a{color:var(--accent)}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin:24px 0}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px}
+.stat b{display:block;font-size:24px}
+.stat span{font-size:14px;color:var(--muted)}
+.tbl{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:14px;background:var(--card);border:1px solid var(--line)}
+th,td{text-align:left;padding:8px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+th{color:var(--muted);font-weight:600}
+tr.hit td:first-child{color:var(--accent);font-weight:700}
+.flow{display:flex;flex-wrap:wrap;gap:6px;align-items:center;font-size:14px;margin:12px 0}
+.flow span{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:6px 10px}
+.flow i{color:var(--muted);font-style:normal}
+.sheets{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px}
+.sheets figure{margin:0;background:var(--card);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.sheets figcaption{padding:6px 12px;font-size:14px}
+img{display:block;max-width:100%;height:auto}
+.legend{display:flex;gap:16px;flex-wrap:wrap;font-size:14px;color:var(--muted);margin:8px 0}
+.sw{display:inline-block;width:12px;height:12px;border-radius:2px;margin-right:6px;vertical-align:-1px}
+.controls{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0 16px}
+button{font:inherit;font-size:14px;padding:6px 14px;border-radius:99px;border:1px solid var(--line);background:var(--card);color:var(--fg);cursor:pointer}
+button[aria-pressed=true]{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.card img{width:100%;cursor:zoom-in}
+.card .body{padding:10px 14px 14px;font-size:14px}
+.card h3{margin:0 0 4px;font-size:15px}
+.tag{display:inline-block;font-size:12px;padding:1px 8px;border-radius:99px;background:var(--chip);margin:2px 4px 2px 0;font-weight:400}
+.note{margin-top:6px;color:var(--accent)}
+.strip{max-width:800px;margin:24px auto 8px}
+.strip img{width:100%;border-radius:6px}
+.hero{text-align:center;margin-bottom:8px}
+.hero h1{font-size:32px}
+h2.poc{font-size:24px;border-top:3px solid var(--fg);margin-top:64px}
+#lb{position:fixed;inset:0;background:#000d;display:none;align-items:center;justify-content:center;padding:16px;z-index:9}
+#lb img{max-width:100%;max-height:100%}
+#lb.on{display:flex}
+@media (max-width:520px){h1{font-size:23px}}
+</style>
+</head>
+<body>
+<main>
+<header class="hero">
+<p class="muted">메인퀘스트 2 · 학교 과제용 시범 웹툰</p>
+<h1>퍼실 선생님의 PoC 교실</h1>
+<p class="muted">30컷 · 대본, 그림, 머리 탐지, 말풍선 배치까지 전부 내 컴퓨터에서 만들었습니다</p>
+</header>
+<div class="strip"><img src="img/sample/strip_ko.jpg" alt="퍼실 선생님의 PoC 교실 세로 웹툰 30컷"></div>
+
+<h2 class="poc">이 웹툰 뒤의 PoC: 말풍선용 얼굴 좌표를 로컬 탐지 모델로 검산하기</h2>
+<p>말풍선 배치 스크립트는 얼굴 좌표(<code>faces.yaml</code>)를 보고 얼굴을 피합니다. 지금은 AI 오케스트레이션의 에이전트들이 그림을 보고 이 좌표를 적습니다. 내 컴퓨터에서 도는 만화 머리 탐지 모델로 그 좌표를 <b>대체</b>할 수 있는지, 아니면 <b>검산</b>할 수 있는지 확인했습니다.</p>
+<p class="muted">코드·문제 정의·수치: <a href="https://github.com/maidysound-netizen/mq2-webtoon-face-poc">GitHub 저장소</a></p>
+
+<h2>실제 원고로 잰 결과</h2>
+<p>측정은 실제 연재 원고 한 편(63컷, 오케스트레이션이 적은 얼굴 78개)으로 했습니다. <b>원고 그림은 공개하지 않고 수치만 싣습니다.</b> 같은 과정을 아래 샘플 웹툰으로 직접 보고 재현할 수 있습니다.</p>
+<div class="stats">
+  <div class="stat"><b>94.9%</b><span>머리 모델이 오케스트레이션 얼굴과 일치 (74/78). 작가 기준 ~100%에 못 미쳐 <b>대체는 ❌</b></span></div>
+  <div class="stat"><b>8 / 63컷</b><span>두 결과가 다른 컷만 보면 됨 (12.7%). 기준 15% 이하 <b>검산 ✅</b></span></div>
+  <div class="stat"><b>09a</b><span>오케스트레이션의 실제 실수가 확인할 컷 안에 들어 있음</span></div>
+  <div class="stat"><b>약 7초</b><span>63컷 탐지 시간 (M1 Max CPU, 외부 전송 없음)</span></div>
+</div>
+<p>교차 검증은 두 경우에 컷을 표시합니다. <b>A</b> 오케스트레이션이 적은 얼굴을 모델이 못 찾음(임계값 0.1). <b>B</b> 모델이 높은 점수(0.5 이상)로 찾은 머리가 오케스트레이션 좌표에 없음.</p>
+<div class="tbl"><table>
+<thead><tr><th>컷</th><th>표시 이유</th><th>실제로는</th><th>누구의 실수</th></tr></thead>
+<tbody>
+<tr class="hit"><td>09a</td><td>A + B</td><td>오케스트레이션 박스가 얼굴 옆 머리카락 위로 어긋남</td><td><b>오케스트레이션 ✅ 잡아냄</b></td></tr>
+<tr class="hit"><td>33</td><td>B</td><td>배경에 고개를 내민 강아지가 좌표에 없음</td><td>오케스트레이션이 빠뜨림</td></tr>
+<tr><td>35b, 37</td><td>B</td><td>배경 군중</td><td>엑스트라 (피해도 되고 안 피해도 됨)</td></tr>
+<tr><td>09c</td><td>A</td><td>화염 속 괴물 얼굴</td><td>모델이 놓침</td></tr>
+<tr><td>E1</td><td>A + B</td><td>한 명은 뒤돌아 있고, 한 명은 작음</td><td>모델이 놓침</td></tr>
+<tr><td>17</td><td>B</td><td>젓가락 든 손을 머리로 착각</td><td>모델의 헛경보</td></tr>
+<tr><td>01</td><td>B</td><td>가로등의 작은 점</td><td>모델의 헛경보</td></tr>
+</tbody></table></div>
+<p>→ 판단: <b>오케스트레이션은 그대로 두고, 로컬 머리 모델을 검산 단계로 붙인다.</b> 언어 모델은 그림을 보고 좌표를 추정하고 탐지 모델은 박스를 직접 재기 때문에, 틀리는 방식이 달라 서로의 실수를 잡기 좋습니다.</p>
+
+<h2>위 웹툰은 이렇게 만들었습니다</h2>
+<p>원고 대신, 이 과제의 수업 내용을 가상의 학생 둘(하나, 준)과 퍼실이 이야기하는 30컷 웹툰을 새로 만들었습니다. 대본부터 조립까지 <b>전부 내 컴퓨터에서</b> 돌았고, 저장소의 <code>run_samples.sh</code> 하나로 다시 돌릴 수 있습니다.</p>
+<div class="flow">
+  <span>대본 30컷<br><small class="muted">Claude Code 가 씀</small></span><i>→</i>
+  <span>캐릭터 시트 4장<br><small class="muted">FLUX.2 klein 4B</small></span><i>→</i>
+  <span>컷 30장<br><small class="muted">시트를 참고 그림으로</small></span><i>→</i>
+  <span>머리 탐지<br><small class="muted">30컷 3.2초</small></span><i>→</i>
+  <span>이름 붙이기<br><small class="muted">대본의 인물 순서</small></span><i>→</i>
+  <span>말풍선 배치<br><small class="muted">얼굴을 피해서</small></span><i>→</i>
+  <span>세로 웹툰 조립</span>
+</div>
+
+<h3>캐릭터 시트</h3>
+<p class="muted">캐릭터마다 후보 3장을 뽑아 작가가 골랐습니다. 컷을 그릴 때 그 컷에 나오는 인물의 시트를 참고 그림으로 넣어 얼굴과 옷을 유지했습니다.</p>
+<div class="sheets">
+  <figure><img src="img/sample/characters/facil.jpg" alt="퍼실 캐릭터 시트" loading="lazy"><figcaption>퍼실</figcaption></figure>
+  <figure><img src="img/sample/characters/hana.jpg" alt="하나 캐릭터 시트" loading="lazy"><figcaption>하나</figcaption></figure>
+  <figure><img src="img/sample/characters/jun.jpg" alt="준 캐릭터 시트" loading="lazy"><figcaption>준</figcaption></figure>
+  <figure><img src="img/sample/characters/corgi.jpg" alt="코기 캐릭터 시트" loading="lazy"><figcaption>코기</figcaption></figure>
+</div>
+
+<h3>30컷 머리 탐지 결과</h3>
+<div class="legend"><span><i class="sw" style="background:#dc2626"></i>대본의 인물 (이름 자동으로 붙임)</span><span><i class="sw" style="background:#f59e0b"></i>엑스트라 (이름 없음, 말풍선은 피함)</span><span><i class="sw" style="background:#a0a0a0"></i>임계값 0.1 미만</span></div>
+<p>대본에 나오는 인물 30명을 모두 찾아 이름을 붙였습니다. 이름 없는 엑스트라 머리는 60개였는데, 그중 18개는 28컷 노트북 화면 속 만화 그림입니다.</p>
+<div class="controls" role="group" aria-label="보기">
+  <button data-v="vis" aria-pressed="true">탐지 결과</button>
+  <button data-v="panels" aria-pressed="false">원본 컷</button>
+  <button data-f="note" aria-pressed="false">눈여겨볼 컷만</button>
+</div>
+<div class="cards" id="grid"></div>
+
+
+<p class="muted" style="margin-top:48px">샘플 웹툰은 FLUX.2 klein 4B (Apache 2.0)와 mflux (MIT)로 로컬에서 생성했습니다. 등장인물은 모두 가상입니다.</p>
+</main>
+<div id="lb" role="dialog" aria-label="크게 보기"><img alt=""></div>
+<script>
+const DATA = [{"id": "01", "cast": [], "named": 0, "extra": 0, "lines": ["오늘의 수업: 내 업무 어디에 AI를 넣을까?"]}, {"id": "02", "cast": ["하나"], "named": 1, "extra": 1, "lines": ["제일 좋은 AI 모델이 뭐예요?"]}, {"id": "03", "cast": ["퍼실"], "named": 1, "extra": 4, "lines": ["도구부터 고르면 아무도 안 써요"]}, {"id": "04", "cast": ["퍼실"], "named": 1, "extra": 0, "lines": ["먼저 내 일에서 병목을 찾는 거예요"]}, {"id": "05", "cast": ["준"], "named": 1, "extra": 3, "lines": ["PoC는 쓰이는 게 아니라 판단이 서는 게 목적…"]}, {"id": "06", "cast": [], "named": 0, "extra": 0, "lines": ["검색 · 검사와 판독 · 분류와 배분 · 입력과 전사"]}, {"id": "07", "cast": ["하나", "준"], "named": 2, "extra": 0, "lines": ["사진 수만 장에서 찾는 건 검사?", "아니, 찾는 거니까 검색!"]}, {"id": "08", "cast": ["퍼실"], "named": 1, "extra": 2, "lines": ["정답! 등급을 매기면 검사예요"]}, {"id": "09", "cast": ["퍼실"], "named": 1, "extra": 0, "lines": ["만들기 전에 기준을 숫자로!"]}, {"id": "10", "cast": ["하나"], "named": 1, "extra": 0, "lines": ["결과 보고 정하면 안 돼요?"]}, {"id": "11", "cast": ["퍼실", "하나"], "named": 2, "extra": 0, "lines": ["그러면 기준이 결과 쪽으로 기울어요", "17개면 괜찮네… 하게 되는구나"]}, {"id": "12", "cast": [], "named": 0, "extra": 0, "lines": ["후보는 크기 말고 성격이 다르게", "내 노트북 · 외부 서비스 · 지금 방식"]}, {"id": "13", "cast": ["준"], "named": 1, "extra": 0, "lines": ["지금 방식도 후보예요?"]}, {"id": "14", "cast": ["퍼실"], "named": 1, "extra": 9, "lines": ["기준선이 이기면 그것도 결과예요"]}, {"id": "15", "cast": [], "named": 0, "extra": 0, "lines": ["점수보다 먼저: 자료 유출, 라이선스"]}, {"id": "16", "cast": ["하나", "퍼실"], "named": 2, "extra": 0, "lines": ["정확도 1등인데 탈락이에요?", "감점으로 하면 못 쓰는 게 1등 해요"]}, {"id": "17", "cast": ["준"], "named": 1, "extra": 3, "lines": ["AGPL… 회사에선 조심"]}, {"id": "18", "cast": ["퍼실"], "named": 1, "extra": 0, "lines": ["softmax는 등수. 없어도 1등이 나와요"]}, {"id": "19", "cast": ["하나"], "named": 1, "extra": 5, "lines": ["sigmoid는 절대평가!"]}, {"id": "20", "cast": ["코기"], "named": 1, "extra": 0, "lines": ["영차"]}, {"id": "21", "cast": ["준"], "named": 1, "extra": 3, "lines": ["다리가 화면에 없는데 각도가 20도래요"]}, {"id": "22", "cast": ["퍼실"], "named": 1, "extra": 4, "lines": ["신뢰도를 안 봤죠? 오류 없이 틀리는 곳이에요"]}, {"id": "23", "cast": [], "named": 0, "extra": 0, "lines": ["임계값을 올리면 헛경보↓ 놓침↑"]}, {"id": "24", "cast": ["하나", "준"], "named": 2, "extra": 0, "lines": ["놓치면 발행되니까 낮게!", "너무 낮으면 다 울려서 무시하고"]}, {"id": "25", "cast": ["퍼실"], "named": 1, "extra": 5, "lines": ["짝짝짝", "정답은 없어요. 더 아픈 쪽을 막아요"]}, {"id": "26", "cast": ["하나"], "named": 1, "extra": 3, "lines": ["모델이 95%… 지금 방식이 더 잘해요"]}, {"id": "27", "cast": ["퍼실", "하나"], "named": 2, "extra": 0, "lines": ["틀리는 방식이 다르면 서로 검산할 수 있어요", "다른 컷만 보면 되겠다!"]}, {"id": "28", "cast": [], "named": 0, "extra": 18, "lines": ["63컷 중 8컷만 확인"]}, {"id": "29", "cast": ["하나", "퍼실", "준"], "named": 3, "extra": 0, "lines": ["잘된다 ≠ 잘된다는 걸 확인했다"]}, {"id": "30", "cast": [], "named": 0, "extra": 0, "lines": ["— 오늘의 회고: 기준을 넘지 못한 이유도 결과다 —"]}];
+const NOTES = {
+  "02": "뒤에 하나를 닮은 학생이 한 명 더 그려졌다. 모델은 엑스트라로 찾았다",
+  "04": "BOTTLENECK 글자를 두 번 다 틀리게 써서(오류 없이 틀림) 글자 없는 장면으로 바꿨다",
+  "16": "말풍선이 말하는 사람 반대편에 놓였다. 가로 컷에 말풍선 자리가 없어서다 (꼬리는 맞는 사람을 가리킴)",
+  "24": "처음엔 한 컷이 두 칸으로 쪼개져 나와 다시 뽑았다. 말풍선 엇갈림은 16컷과 같음",
+  "28": "인물이 없는 컷인데 머리 18개. 노트북 화면 속 만화의 머리를 찾았다",
+  "29": "세 사람을 왼쪽부터 하나·퍼실·준으로 이름 붙임"
+};
+let view = 'vis', onlyNote = false;
+const grid = document.getElementById('grid');
+function render() {
+  grid.innerHTML = '';
+  DATA.filter(d => !onlyNote || d.id in NOTES).forEach(d => {
+    const a = document.createElement('article');
+    a.className = 'card';
+    const cast = d.cast.length ? d.cast.join(' · ') : '인물 없음';
+    a.innerHTML = `<img src="img/sample/${view}/${d.id}.jpg" alt="${d.id}컷" loading="lazy">
+      <div class="body"><h3>${d.id}컷 <span class="tag">${cast}</span>${d.extra ? `<span class="tag">엑스트라 ${d.extra}</span>` : ''}</h3>
+      <p class="muted">${d.lines.join(' / ')}</p>${d.id in NOTES ? `<p class="note">${NOTES[d.id]}</p>` : ''}</div>`;
+    grid.append(a);
+  });
+}
+document.querySelectorAll('[data-v]').forEach(b => b.onclick = () => {
+  view = b.dataset.v;
+  document.querySelectorAll('[data-v]').forEach(x => x.setAttribute('aria-pressed', x === b));
+  render();
+});
+document.querySelector('[data-f]').onclick = e => {
+  onlyNote = !onlyNote;
+  e.target.setAttribute('aria-pressed', onlyNote);
+  render();
+};
+render();
+const lb = document.getElementById('lb');
+document.addEventListener('click', e => {
+  if (e.target.matches('.card img, .sheets img')) { lb.firstElementChild.src = e.target.src; lb.classList.add('on'); }
+  else if (lb.contains(e.target)) lb.classList.remove('on');
+});
+document.addEventListener('keydown', e => { if (e.key === 'Escape') lb.classList.remove('on'); });
+</script>
+</body>
+</html>

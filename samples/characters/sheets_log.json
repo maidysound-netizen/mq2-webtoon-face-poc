@@ -1,0 +1,146 @@
+{
+ "facil_s1.png": {
+  "character": "facil",
+  "prompt": "character design reference sheet of a friendly young male teacher with short wavy hair, round glasses and a navy cardigan with a lanyard. Left side: the same character standing full body in front view, side view and back view. Right side: three head close-ups of the same character, happy, surprised and thinking expressions. plain white background, korean webtoon style, clean anime line art, flat cel shading, consistent design across all views, no text, no labels",
+  "seed": 1,
+  "steps": 4,
+  "size": [
+   1280,
+   768
+  ],
+  "model": "flux2-klein-4b",
+  "sec": 78.7
+ },
+ "facil_s2.png": {
+  "character": "facil",
+  "prompt": "character design reference sheet of a friendly young male teacher with short wavy hair, round glasses and a navy cardigan with a lanyard. Left side: the same character standing full body in front view, side view and back view. Right side: three head close-ups of the same character, happy, surprised and thinking expressions. plain white background, korean webtoon style, clean anime line art, flat cel shading, consistent design across all views, no text, no labels",
+  "seed": 2,
+  "steps": 4,
+  "size": [
+   1280,
+   768
+  ],
+  "model": "flux2-klein-4b",
+  "sec": 45.3
+ },
+ "facil_s3.png": {
+  "character": "facil",
+  "prompt": "character design reference sheet of a friendly young male teacher with short wavy hair, round glasses and a navy cardigan with a lanyard. Left side: the same character standing full body in front view, side view and back view. Right side: three head close-ups of the same character, happy, surprised and thinking expressions. plain white background, korean webtoon style, clean anime line art, flat cel shading, consistent design across all views, no text, no labels",
+  "seed": 3,
+  "steps": 4,
+  "size": [
+   1280,
+   768
+  ],
+  "model": "flux2-klein-4b",
+  "sec": 46.0
+ },
+ "hana_s1.png": {
+  "character": "hana",
+  "prompt": "character design reference sheet of a cheerful female student with a short brown bob haircut and a yellow hoodie. Left side: the same character standing full body in front view, side view and back view. Right side: three head close-ups of the same character, happy, surprised and thinking expressions. plain white background, korean webtoon style, clean anime line art, flat cel shading, consistent design across all views, no text, no labels",
+  "seed": 1,
+  "steps": 4,
+  "size": [
+   1280,
+   768
+  ],
+  "model": "flux2-klein-4b",
+  "sec": 46.4
+ },
+ "hana_s2.png": {
+  "character": "hana",
+  "prompt": "character design reference sheet of a cheerful female student with a short brown bob haircut and a yellow hoodie. Left side: the same character standing full body in front view, side view and back view. Right side: three head close-ups of the same character, happy, surprised and thinking expressions. plain white background, korean webtoon style, clean anime line art, flat cel shading, consistent design across all views, no text, no labels",
+  "seed": 2,
+  "steps": 4,
+  "size": [
+   1280,
+   768
+  ],
+  "model": "flux2-klein-4b",
+  "sec": 45.6
+ },
+ "hana_s3.png": {
+  "character": "hana",
+  "prompt": "character design reference sheet of a cheerful female student with a short brown bob haircut and a yellow hoodie. Left side: the same character standing full body in front view, side view and back view. Right side: three head close-ups of the same character, happy, surprised and thinking expressions. plain white background, korean webtoon style, clean anime line art, flat cel shading, consistent design across all views, no text, no labels",
+  "seed": 3,
+  "steps": 4,
+  "size": [
+   1280,
+   768
+  ],
+  "model": "flux2-klein-4b",
+  "sec": 43.1
+ },
+ "jun_s1.png": {
+  "character": "jun",
+  "prompt": "character design reference sheet of a calm male student with messy black hair and a gray sweatshirt. Left side: the same character standing full body in front view, side view and back view. Right side: three head close-ups of the same character, happy, surprised and thinking expressions. plain white background, korean webtoon style, clean anime line art, flat cel shading, consistent design across all views, no text, no labels",
+  "seed": 1,
+  "steps": 4,
+  "size": [
+   1280,
+   768
+  ],
+  "model": "flux2-klein-4b",
+  "sec": 42.7
+ },
+ "jun_s2.png": {
+  "character": "jun",
+  "prompt": "character design reference sheet of a calm male student with messy black hair and a gray sweatshirt. Left side: the same character standing full body in front view, side view and back view. Right side: three head close-ups of the same character, happy, surprised and thinking expressions. plain white background, korean webtoon style, clean anime line art, flat cel shading, consistent design across all views, no text, no labels",
+  "seed": 2,
+  "steps": 4,
+  "size": [
+   1280,
+   768
+  ],
+  "model": "flux2-klein-4b",
+  "sec": 41.6
+ },
+ "jun_s3.png": {
+  "character": "jun",
+  "prompt": "character design reference sheet of a calm male student with messy black hair and a gray sweatshirt. Left side: the same character standing full body in front view, side view and back view. Right side: three head close-ups of the same character, happy, surprised and thinking expressions. plain white background, korean webtoon style, clean anime line art, flat cel shading, consistent design across all views, no text, no labels",
+  "seed": 3,
+  "steps": 4,
+  "size": [
+   1280,
+   768
+  ],
+  "model": "flux2-klein-4b",
+  "sec": 40.1
+ },
+ "corgi_s1.png": {
+  "character": "corgi",
+  "prompt": "character design reference sheet of a chubby corgi wearing a small pink t-shirt. Left side: the same dog full body in front view and side view. Right side: three head close-ups of the same dog, happy, surprised and sleepy expressions. plain white background, korean webtoon style, clean anime line art, flat cel shading, consistent design across all views, no text, no labels",
+  "seed": 1,
+  "steps": 4,
+  "size": [
+   1280,
+   768
+  ],
+  "model": "flux2-klein-4b",
+  "sec": 40.0
+ },
+ "corgi_s2.png": {
+  "character": "corgi",
+  "prompt": "character design reference sheet of a chubby corgi wearing a small pink t-shirt. Left side: the same dog full body in front view and side view. Right side: three head close-ups of the same dog, happy, surprised and sleepy expressions. plain white background, korean webtoon style, clean anime line art, flat cel shading, consistent design across all views, no text, no labels",
+  "seed": 2,
+  "steps": 4,
+  "size": [
+   1280,
+   768
+  ],
+  "model": "flux2-klein-4b",
+  "sec": 39.6
+ },
+ "corgi_s3.png": {
+  "character": "corgi",
+  "prompt": "character design reference sheet of a chubby corgi wearing a small pink t-shirt. Left side: the same dog full body in front view and side view. Right side: three head close-ups of the same dog, happy, surprised and sleepy expressions. plain white background, korean webtoon style, clean anime line art, flat cel shading, consistent design across all views, no text, no labels",
+  "seed": 3,
+  "steps": 4,
+  "size": [
+   1280,
+   768
+  ],
+  "model": "flux2-klein-4b",
+  "sec": 38.7
+ }
+}

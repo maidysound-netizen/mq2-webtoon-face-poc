@@ -1,0 +1,9 @@
+{
+ "model": "head_detect_v2.0_s",
+ "panels": 30,
+ "size": 640,
+ "min_score": 0.01,
+ "iou": 0.5,
+ "sec_total": 3.286366836000525,
+ "sec_per_panel": 0.1095455612000175
+}

@@ -1,0 +1,12 @@
+.venv/
+models/
+__pycache__/
+._*
+.DS_Store
+samples/episode/out/
+.claude/
+results/*/vis_thr*/
+# 원고 그림(공개하지 않음)
+private/
+results/*.jpg
+results/*/vis_thr*/

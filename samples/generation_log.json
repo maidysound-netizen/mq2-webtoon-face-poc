@@ -1,0 +1,415 @@
+{
+ "07": {
+  "prompt": "Reference character sheets: image 1 shows a cheerful female student with a short brown bob haircut and a yellow hoodie; image 2 shows a calm male student with messy black hair and a gray sweatshirt. Draw these same characters with the same face, hair and clothes, as a single comic panel, not a character sheet. korean webtoon panel, clean anime line art, cel shading, bright classroom lighting, a cheerful female student with a short brown bob haircut and a yellow hoodie on the left counting on her fingers, a calm male student with messy black hair and a gray sweatshirt on the right pointing at the whiteboard, no text, no speech bubbles",
+  "refs": [
+   "hana",
+   "jun"
+  ],
+  "seed": 106,
+  "size": [
+   1024,
+   640
+  ],
+  "steps": 4,
+  "model": "flux2-klein-4b",
+  "sec": 108.4
+ },
+ "01": {
+  "prompt": "korean webtoon panel, clean anime line art, cel shading, bright classroom lighting, a bright small classroom with a whiteboard and three desks with laptops, morning sunlight, no people, no text, no speech bubbles",
+  "refs": [],
+  "seed": 100,
+  "size": [
+   1024,
+   640
+  ],
+  "steps": 4,
+  "model": "flux2-klein-4b",
+  "sec": 25.1
+ },
+ "02": {
+  "prompt": "Reference character sheets: image 1 shows a cheerful female student with a short brown bob haircut and a yellow hoodie. Draw these same characters with the same face, hair and clothes, as a single comic panel, not a character sheet. korean webtoon panel, clean anime line art, cel shading, bright classroom lighting, a cheerful female student with a short brown bob haircut and a yellow hoodie raising her hand eagerly at her desk, no text, no speech bubbles",
+  "refs": [
+   "hana"
+  ],
+  "seed": 101,
+  "size": [
+   768,
+   1024
+  ],
+  "steps": 4,
+  "model": "flux2-klein-4b",
+  "sec": 60.6
+ },
+ "03": {
+  "prompt": "Reference character sheets: image 1 shows a friendly young male teacher with short wavy hair, round glasses and a navy cardigan with a lanyard. Draw these same characters with the same face, hair and clothes, as a single comic panel, not a character sheet. korean webtoon panel, clean anime line art, cel shading, bright classroom lighting, a friendly young male teacher with short wavy hair, round glasses and a navy cardigan with a lanyard smiling and shaking his finger gently, upper body, no text, no speech bubbles",
+  "refs": [
+   "facil"
+  ],
+  "seed": 102,
+  "size": [
+   768,
+   768
+  ],
+  "steps": 4,
+  "model": "flux2-klein-4b",
+  "sec": 57.0
+ },
+ "04": {
+  "prompt": "Reference character sheets: image 1 shows a friendly young male teacher with short wavy hair, round glasses and a navy cardigan with a lanyard. Draw these same characters with the same face, hair and clothes, as a single comic panel, not a character sheet. korean webtoon panel, clean anime line art, cel shading, bright classroom lighting, a friendly young male teacher with short wavy hair, round glasses and a navy cardigan with a lanyard drawing a simple bottle shape with a narrow neck and arrows on a whiteboard, no letters, no text, no speech bubbles",
+  "refs": [
+   "facil"
+  ],
+  "seed": 303,
+  "size": [
+   1024,
+   640
+  ],
+  "steps": 4,
+  "model": "flux2-klein-4b",
+  "sec": 61.3
+ },
+ "05": {
+  "prompt": "Reference character sheets: image 1 shows a calm male student with messy black hair and a gray sweatshirt. Draw these same characters with the same face, hair and clothes, as a single comic panel, not a character sheet. korean webtoon panel, clean anime line art, cel shading, bright classroom lighting, a calm male student with messy black hair and a gray sweatshirt taking notes in a notebook, thoughtful, no text, no speech bubbles",
+  "refs": [
+   "jun"
+  ],
+  "seed": 104,
+  "size": [
+   768,
+   1024
+  ],
+  "steps": 4,
+  "model": "flux2-klein-4b",
+  "sec": 66.7
+ },
+ "06": {
+  "prompt": "korean webtoon panel, clean anime line art, cel shading, bright classroom lighting, a whiteboard divided into four boxes with simple icons: magnifying glass, eye, sorting arrows, pen, no people, no text, no speech bubbles",
+  "refs": [],
+  "seed": 105,
+  "size": [
+   1024,
+   640
+  ],
+  "steps": 4,
+  "model": "flux2-klein-4b",
+  "sec": 26.6
+ },
+ "08": {
+  "prompt": "Reference character sheets: image 1 shows a friendly young male teacher with short wavy hair, round glasses and a navy cardigan with a lanyard. Draw these same characters with the same face, hair and clothes, as a single comic panel, not a character sheet. korean webtoon panel, clean anime line art, cel shading, bright classroom lighting, a friendly young male teacher with short wavy hair, round glasses and a navy cardigan with a lanyard giving a thumbs up with a wink, no text, no speech bubbles",
+  "refs": [
+   "facil"
+  ],
+  "seed": 107,
+  "size": [
+   768,
+   768
+  ],
+  "steps": 4,
+  "model": "flux2-klein-4b",
+  "sec": 58.9
+ },
+ "09": {
+  "prompt": "Reference character sheets: image 1 shows a friendly young male teacher with short wavy hair, round glasses and a navy cardigan with a lanyard. Draw these same characters with the same face, hair and clothes, as a single comic panel, not a character sheet. korean webtoon panel, clean anime line art, cel shading, bright classroom lighting, a friendly young male teacher with short wavy hair, round glasses and a navy cardigan with a lanyard holding up a sheet of paper with a big number 18/20 written on it, no text, no speech bubbles",
+  "refs": [
+   "facil"
+  ],
+  "seed": 108,
+  "size": [
+   768,
+   1024
+  ],
+  "steps": 4,
+  "model": "flux2-klein-4b",
+  "sec": 70.9
+ },
+ "10": {
+  "prompt": "Reference character sheets: image 1 shows a cheerful female student with a short brown bob haircut and a yellow hoodie. Draw these same characters with the same face, hair and clothes, as a single comic panel, not a character sheet. korean webtoon panel, clean anime line art, cel shading, bright classroom lighting, a cheerful female student with a short brown bob haircut and a yellow hoodie tilting her head, confused, no text, no speech bubbles",
+  "refs": [
+   "hana"
+  ],
+  "seed": 109,
+  "size": [
+   768,
+   768
+  ],
+  "steps": 4,
+  "model": "flux2-klein-4b",
+  "sec": 62.1
+ },
+ "11": {
+  "prompt": "Reference character sheets: image 1 shows a friendly young male teacher with short wavy hair, round glasses and a navy cardigan with a lanyard; image 2 shows a cheerful female student with a short brown bob haircut and a yellow hoodie. Draw these same characters with the same face, hair and clothes, as a single comic panel, not a character sheet. korean webtoon panel, clean anime line art, cel shading, bright classroom lighting, a friendly young male teacher with short wavy hair, round glasses and a navy cardigan with a lanyard on the left explaining with open hands, a cheerful female student with a short brown bob haircut and a yellow hoodie on the right listening, no text, no speech bubbles",
+  "refs": [
+   "facil",
+   "hana"
+  ],
+  "seed": 110,
+  "size": [
+   1024,
+   640
+  ],
+  "steps": 4,
+  "model": "flux2-klein-4b",
+  "sec": 116.1
+ },
+ "12": {
+  "prompt": "korean webtoon panel, clean anime line art, cel shading, bright classroom lighting, three cards on a table: a laptop icon, a cloud icon, and a human eye icon, no people, no text, no speech bubbles",
+  "refs": [],
+  "seed": 111,
+  "size": [
+   1024,
+   640
+  ],
+  "steps": 4,
+  "model": "flux2-klein-4b",
+  "sec": 28.8
+ },
+ "13": {
+  "prompt": "Reference character sheets: image 1 shows a calm male student with messy black hair and a gray sweatshirt. Draw these same characters with the same face, hair and clothes, as a single comic panel, not a character sheet. korean webtoon panel, clean anime line art, cel shading, bright classroom lighting, a calm male student with messy black hair and a gray sweatshirt raising his hand with a puzzled look, no text, no speech bubbles",
+  "refs": [
+   "jun"
+  ],
+  "seed": 112,
+  "size": [
+   768,
+   1024
+  ],
+  "steps": 4,
+  "model": "flux2-klein-4b",
+  "sec": 79.8
+ },
+ "14": {
+  "prompt": "Reference character sheets: image 1 shows a friendly young male teacher with short wavy hair, round glasses and a navy cardigan with a lanyard. Draw these same characters with the same face, hair and clothes, as a single comic panel, not a character sheet. korean webtoon panel, clean anime line art, cel shading, bright classroom lighting, a friendly young male teacher with short wavy hair, round glasses and a navy cardigan with a lanyard nodding seriously with arms crossed, no text, no speech bubbles",
+  "refs": [
+   "facil"
+  ],
+  "seed": 113,
+  "size": [
+   768,
+   768
+  ],
+  "steps": 4,
+  "model": "flux2-klein-4b",
+  "sec": 62.4
+ },
+ "15": {
+  "prompt": "korean webtoon panel, clean anime line art, cel shading, bright classroom lighting, a funnel drawing on a whiteboard filtering out a cloud icon and a padlock icon, no people, no text, no speech bubbles",
+  "refs": [],
+  "seed": 114,
+  "size": [
+   1024,
+   640
+  ],
+  "steps": 4,
+  "model": "flux2-klein-4b",
+  "sec": 29.8
+ },
+ "16": {
+  "prompt": "Reference character sheets: image 1 shows a cheerful female student with a short brown bob haircut and a yellow hoodie; image 2 shows a friendly young male teacher with short wavy hair, round glasses and a navy cardigan with a lanyard. Draw these same characters with the same face, hair and clothes, as a single comic panel, not a character sheet. korean webtoon panel, clean anime line art, cel shading, bright classroom lighting, a cheerful female student with a short brown bob haircut and a yellow hoodie on the left surprised, a friendly young male teacher with short wavy hair, round glasses and a navy cardigan with a lanyard on the right holding a document with a red stamp, no text, no speech bubbles",
+  "refs": [
+   "hana",
+   "facil"
+  ],
+  "seed": 115,
+  "size": [
+   1024,
+   640
+  ],
+  "steps": 4,
+  "model": "flux2-klein-4b",
+  "sec": 116.6
+ },
+ "17": {
+  "prompt": "Reference character sheets: image 1 shows a calm male student with messy black hair and a gray sweatshirt. Draw these same characters with the same face, hair and clothes, as a single comic panel, not a character sheet. korean webtoon panel, clean anime line art, cel shading, bright classroom lighting, close-up of a calm male student with messy black hair and a gray sweatshirt reading a license text on his laptop, squinting, no text, no speech bubbles",
+  "refs": [
+   "jun"
+  ],
+  "seed": 116,
+  "size": [
+   768,
+   768
+  ],
+  "steps": 4,
+  "model": "flux2-klein-4b",
+  "sec": 65.5
+ },
+ "18": {
+  "prompt": "Reference character sheets: image 1 shows a friendly young male teacher with short wavy hair, round glasses and a navy cardigan with a lanyard. Draw these same characters with the same face, hair and clothes, as a single comic panel, not a character sheet. korean webtoon panel, clean anime line art, cel shading, bright classroom lighting, a friendly young male teacher with short wavy hair, round glasses and a navy cardigan with a lanyard pointing at a whiteboard with a ranking podium drawing, no text, no speech bubbles",
+  "refs": [
+   "facil"
+  ],
+  "seed": 117,
+  "size": [
+   768,
+   1024
+  ],
+  "steps": 4,
+  "model": "flux2-klein-4b",
+  "sec": 72.5
+ },
+ "19": {
+  "prompt": "Reference character sheets: image 1 shows a cheerful female student with a short brown bob haircut and a yellow hoodie. Draw these same characters with the same face, hair and clothes, as a single comic panel, not a character sheet. korean webtoon panel, clean anime line art, cel shading, bright classroom lighting, a cheerful female student with a short brown bob haircut and a yellow hoodie with a light bulb moment, eyes sparkling, no text, no speech bubbles",
+  "refs": [
+   "hana"
+  ],
+  "seed": 118,
+  "size": [
+   768,
+   768
+  ],
+  "steps": 4,
+  "model": "flux2-klein-4b",
+  "sec": 65.1
+ },
+ "20": {
+  "prompt": "Reference character sheets: image 1 shows a chubby corgi wearing a small pink t-shirt. Draw these same characters with the same face, hair and clothes, as a single comic panel, not a character sheet. korean webtoon panel, clean anime line art, cel shading, bright classroom lighting, a cartoon corgi doing a squat exercise, side view, comedic, no text, no speech bubbles",
+  "refs": [
+   "corgi"
+  ],
+  "seed": 119,
+  "size": [
+   768,
+   768
+  ],
+  "steps": 4,
+  "model": "flux2-klein-4b",
+  "sec": 64.5
+ },
+ "21": {
+  "prompt": "Reference character sheets: image 1 shows a calm male student with messy black hair and a gray sweatshirt. Draw these same characters with the same face, hair and clothes, as a single comic panel, not a character sheet. korean webtoon panel, clean anime line art, cel shading, bright classroom lighting, a calm male student with messy black hair and a gray sweatshirt looking at a laptop screen showing a stick figure skeleton with some red joints, confused, no text, no speech bubbles",
+  "refs": [
+   "jun"
+  ],
+  "seed": 120,
+  "size": [
+   1024,
+   640
+  ],
+  "steps": 4,
+  "model": "flux2-klein-4b",
+  "sec": 66.6
+ },
+ "22": {
+  "prompt": "Reference character sheets: image 1 shows a friendly young male teacher with short wavy hair, round glasses and a navy cardigan with a lanyard. Draw these same characters with the same face, hair and clothes, as a single comic panel, not a character sheet. korean webtoon panel, clean anime line art, cel shading, bright classroom lighting, a friendly young male teacher with short wavy hair, round glasses and a navy cardigan with a lanyard raising one finger with a knowing smile, no text, no speech bubbles",
+  "refs": [
+   "facil"
+  ],
+  "seed": 121,
+  "size": [
+   768,
+   1024
+  ],
+  "steps": 4,
+  "model": "flux2-klein-4b",
+  "sec": 70.5
+ },
+ "23": {
+  "prompt": "korean webtoon panel, clean anime line art, cel shading, bright classroom lighting, a seesaw drawing on a whiteboard balancing two words FALSE ALARM and MISS, no people, no text, no speech bubbles",
+  "refs": [],
+  "seed": 122,
+  "size": [
+   1024,
+   640
+  ],
+  "steps": 4,
+  "model": "flux2-klein-4b",
+  "sec": 28.5
+ },
+ "24": {
+  "prompt": "Reference character sheets: image 1 shows a cheerful female student with a short brown bob haircut and a yellow hoodie; image 2 shows a calm male student with messy black hair and a gray sweatshirt. Draw these same characters with the same face, hair and clothes, as a single comic panel, not a character sheet. korean webtoon panel, clean anime line art, cel shading, bright classroom lighting, a cheerful female student with a short brown bob haircut and a yellow hoodie on the left arguing passionately, a calm male student with messy black hair and a gray sweatshirt on the right nodding, no text, no speech bubbles",
+  "refs": [
+   "hana",
+   "jun"
+  ],
+  "seed": 223,
+  "size": [
+   1024,
+   640
+  ],
+  "steps": 4,
+  "model": "flux2-klein-4b",
+  "sec": 105.2
+ },
+ "25": {
+  "prompt": "Reference character sheets: image 1 shows a friendly young male teacher with short wavy hair, round glasses and a navy cardigan with a lanyard. Draw these same characters with the same face, hair and clothes, as a single comic panel, not a character sheet. korean webtoon panel, clean anime line art, cel shading, bright classroom lighting, a friendly young male teacher with short wavy hair, round glasses and a navy cardigan with a lanyard clapping happily, no text, no speech bubbles",
+  "refs": [
+   "facil"
+  ],
+  "seed": 124,
+  "size": [
+   768,
+   768
+  ],
+  "steps": 4,
+  "model": "flux2-klein-4b",
+  "sec": 61.9
+ },
+ "26": {
+  "prompt": "Reference character sheets: image 1 shows a cheerful female student with a short brown bob haircut and a yellow hoodie. Draw these same characters with the same face, hair and clothes, as a single comic panel, not a character sheet. korean webtoon panel, clean anime line art, cel shading, bright classroom lighting, a cheerful female student with a short brown bob haircut and a yellow hoodie looking at her laptop with a slightly disappointed face, no text, no speech bubbles",
+  "refs": [
+   "hana"
+  ],
+  "seed": 125,
+  "size": [
+   768,
+   1024
+  ],
+  "steps": 4,
+  "model": "flux2-klein-4b",
+  "sec": 69.6
+ },
+ "27": {
+  "prompt": "Reference character sheets: image 1 shows a friendly young male teacher with short wavy hair, round glasses and a navy cardigan with a lanyard; image 2 shows a cheerful female student with a short brown bob haircut and a yellow hoodie. Draw these same characters with the same face, hair and clothes, as a single comic panel, not a character sheet. korean webtoon panel, clean anime line art, cel shading, bright classroom lighting, a friendly young male teacher with short wavy hair, round glasses and a navy cardigan with a lanyard on the left drawing two overlapping circles on the whiteboard, a cheerful female student with a short brown bob haircut and a yellow hoodie on the right watching, no text, no speech bubbles",
+  "refs": [
+   "facil",
+   "hana"
+  ],
+  "seed": 126,
+  "size": [
+   1024,
+   640
+  ],
+  "steps": 4,
+  "model": "flux2-klein-4b",
+  "sec": 112.9
+ },
+ "28": {
+  "prompt": "korean webtoon panel, clean anime line art, cel shading, bright classroom lighting, a laptop screen showing a list of comic panels with a few highlighted in yellow, no people, no text, no speech bubbles",
+  "refs": [],
+  "seed": 127,
+  "size": [
+   768,
+   768
+  ],
+  "steps": 4,
+  "model": "flux2-klein-4b",
+  "sec": 25.2
+ },
+ "29": {
+  "prompt": "Reference character sheets: image 1 shows a cheerful female student with a short brown bob haircut and a yellow hoodie; image 2 shows a friendly young male teacher with short wavy hair, round glasses and a navy cardigan with a lanyard; image 3 shows a calm male student with messy black hair and a gray sweatshirt. Draw these same characters with the same face, hair and clothes, as a single comic panel, not a character sheet. korean webtoon panel, clean anime line art, cel shading, bright classroom lighting, a cheerful female student with a short brown bob haircut and a yellow hoodie on the left, a friendly young male teacher with short wavy hair, round glasses and a navy cardigan with a lanyard in the middle, a calm male student with messy black hair and a gray sweatshirt on the right, all smiling and giving thumbs up, no text, no speech bubbles",
+  "refs": [
+   "hana",
+   "facil",
+   "jun"
+  ],
+  "seed": 128,
+  "size": [
+   1024,
+   640
+  ],
+  "steps": 4,
+  "model": "flux2-klein-4b",
+  "sec": 169.6
+ },
+ "30": {
+  "prompt": "korean webtoon panel, clean anime line art, cel shading, bright classroom lighting, the empty classroom at sunset with notes left on the whiteboard, warm light, no people, no text, no speech bubbles",
+  "refs": [],
+  "seed": 129,
+  "size": [
+   1024,
+   640
+  ],
+  "steps": 4,
+  "model": "flux2-klein-4b",
+  "sec": 27.6
+ }
+}

@@ -1,0 +1,888 @@
+{
+ "summary": {
+  "threshold": 0.1,
+  "cover": 0.5,
+  "faces": 78,
+  "hit": 28,
+  "missed": 50,
+  "recall": 0.358974358974359,
+  "found": 68,
+  "found_rate": 0.8717948717948718,
+  "extra_boxes": 4,
+  "panels_without_labels_but_boxes": 1
+ },
+ "missed": [
+  {
+   "panel": "04",
+   "who": "char_B",
+   "coverage": 0.379,
+   "found": true
+  },
+  {
+   "panel": "09",
+   "who": "char_A",
+   "coverage": 0.0,
+   "found": false
+  },
+  {
+   "panel": "09",
+   "who": "char_B",
+   "coverage": 0.483,
+   "found": true
+  },
+  {
+   "panel": "09a",
+   "who": "char_B",
+   "coverage": 0.045,
+   "found": false
+  },
+  {
+   "panel": "09b",
+   "who": "char_C",
+   "coverage": 0.183,
+   "found": true
+  },
+  {
+   "panel": "09b",
+   "who": "char_A",
+   "coverage": 0.07,
+   "found": true
+  },
+  {
+   "panel": "09c",
+   "who": "char_C",
+   "coverage": 0.029,
+   "found": false
+  },
+  {
+   "panel": "09c",
+   "who": "char_A",
+   "coverage": 0.218,
+   "found": true
+  },
+  {
+   "panel": "09e",
+   "who": "char_A",
+   "coverage": 0.352,
+   "found": true
+  },
+  {
+   "panel": "09o1",
+   "who": "char_A",
+   "coverage": 0.494,
+   "found": true
+  },
+  {
+   "panel": "09o2",
+   "who": "char_B",
+   "coverage": 0.367,
+   "found": true
+  },
+  {
+   "panel": "09o2",
+   "who": "char_A",
+   "coverage": 0.387,
+   "found": true
+  },
+  {
+   "panel": "09o3",
+   "who": "char_E",
+   "coverage": 0.49,
+   "found": true
+  },
+  {
+   "panel": "11b",
+   "who": "char_B",
+   "coverage": 0.334,
+   "found": true
+  },
+  {
+   "panel": "11b",
+   "who": "char_A",
+   "coverage": 0.37,
+   "found": true
+  },
+  {
+   "panel": "12",
+   "who": "char_B",
+   "coverage": 0.172,
+   "found": false
+  },
+  {
+   "panel": "12",
+   "who": "char_A",
+   "coverage": 0.417,
+   "found": true
+  },
+  {
+   "panel": "18",
+   "who": "char_B",
+   "coverage": 0.363,
+   "found": true
+  },
+  {
+   "panel": "18b",
+   "who": "char_D",
+   "coverage": 0.303,
+   "found": true
+  },
+  {
+   "panel": "21",
+   "who": "char_B",
+   "coverage": 0.267,
+   "found": false
+  },
+  {
+   "panel": "24",
+   "who": "char_B",
+   "coverage": 0.4,
+   "found": true
+  },
+  {
+   "panel": "30",
+   "who": "object_statue",
+   "coverage": 0.198,
+   "found": true
+  },
+  {
+   "panel": "30b",
+   "who": "char_B",
+   "coverage": 0.236,
+   "found": true
+  },
+  {
+   "panel": "32",
+   "who": "char_A",
+   "coverage": 0.325,
+   "found": true
+  },
+  {
+   "panel": "32b",
+   "who": "char_A",
+   "coverage": 0.434,
+   "found": true
+  },
+  {
+   "panel": "32c",
+   "who": "char_B",
+   "coverage": 0.117,
+   "found": true
+  },
+  {
+   "panel": "33",
+   "who": "char_B",
+   "coverage": 0.352,
+   "found": true
+  },
+  {
+   "panel": "34",
+   "who": "char_D",
+   "coverage": 0.493,
+   "found": true
+  },
+  {
+   "panel": "35",
+   "who": "char_D",
+   "coverage": 0.325,
+   "found": true
+  },
+  {
+   "panel": "35b",
+   "who": "char_A",
+   "coverage": 0.205,
+   "found": true
+  },
+  {
+   "panel": "35b",
+   "who": "char_B",
+   "coverage": 0.123,
+   "found": false
+  },
+  {
+   "panel": "36",
+   "who": "char_B",
+   "coverage": 0.249,
+   "found": true
+  },
+  {
+   "panel": "36b",
+   "who": "char_A",
+   "coverage": 0.352,
+   "found": true
+  },
+  {
+   "panel": "37",
+   "who": "char_A",
+   "coverage": 0.25,
+   "found": true
+  },
+  {
+   "panel": "38",
+   "who": "char_A",
+   "coverage": 0.349,
+   "found": true
+  },
+  {
+   "panel": "38",
+   "who": "char_B",
+   "coverage": 0.286,
+   "found": true
+  },
+  {
+   "panel": "39",
+   "who": "char_A",
+   "coverage": 0.274,
+   "found": true
+  },
+  {
+   "panel": "39",
+   "who": "char_B",
+   "coverage": 0.371,
+   "found": true
+  },
+  {
+   "panel": "39",
+   "who": "char_D",
+   "coverage": 0.352,
+   "found": true
+  },
+  {
+   "panel": "39b",
+   "who": "char_B",
+   "coverage": 0.15,
+   "found": true
+  },
+  {
+   "panel": "39b",
+   "who": "char_D",
+   "coverage": 0.0,
+   "found": false
+  },
+  {
+   "panel": "40",
+   "who": "char_B",
+   "coverage": 0.236,
+   "found": true
+  },
+  {
+   "panel": "40",
+   "who": "char_D",
+   "coverage": 0.107,
+   "found": true
+  },
+  {
+   "panel": "E1",
+   "who": "char_A",
+   "coverage": 0.0,
+   "found": false
+  },
+  {
+   "panel": "E1",
+   "who": "char_B",
+   "coverage": 0.0,
+   "found": false
+  },
+  {
+   "panel": "E1",
+   "who": "char_D",
+   "coverage": 0.024,
+   "found": true
+  },
+  {
+   "panel": "E2",
+   "who": "char_A",
+   "coverage": 0.078,
+   "found": true
+  },
+  {
+   "panel": "E2",
+   "who": "char_D",
+   "coverage": 0.038,
+   "found": true
+  },
+  {
+   "panel": "E4",
+   "who": "char_B",
+   "coverage": 0.298,
+   "found": false
+  },
+  {
+   "panel": "E4",
+   "who": "char_D",
+   "coverage": 0.29,
+   "found": true
+  }
+ ],
+ "extra": [
+  {
+   "panel": "33",
+   "score": 0.630539059638977
+  },
+  {
+   "panel": "35b",
+   "score": 0.292418897151947
+  },
+  {
+   "panel": "37",
+   "score": 0.37318748235702515
+  },
+  {
+   "panel": "E1",
+   "score": 0.8033050298690796
+  }
+ ],
+ "unlabeled_panels": [
+  {
+   "panel": "17",
+   "boxes": 1
+  }
+ ],
+ "rows": [
+  {
+   "panel": "03",
+   "who": "char_B",
+   "coverage": 0.622,
+   "hit": true,
+   "found": true
+  },
+  {
+   "panel": "04",
+   "who": "char_B",
+   "coverage": 0.379,
+   "hit": false,
+   "found": true
+  },
+  {
+   "panel": "06",
+   "who": "char_A",
+   "coverage": 0.574,
+   "hit": true,
+   "found": true
+  },
+  {
+   "panel": "07",
+   "who": "char_B",
+   "coverage": 0.922,
+   "hit": true,
+   "found": true
+  },
+  {
+   "panel": "07b",
+   "who": "char_A",
+   "coverage": 0.938,
+   "hit": true,
+   "found": true
+  },
+  {
+   "panel": "08",
+   "who": "char_A",
+   "coverage": 0.735,
+   "hit": true,
+   "found": true
+  },
+  {
+   "panel": "09",
+   "who": "char_C",
+   "coverage": 0.516,
+   "hit": true,
+   "found": true
+  },
+  {
+   "panel": "09",
+   "who": "char_A",
+   "coverage": 0.0,
+   "hit": false,
+   "found": false
+  },
+  {
+   "panel": "09",
+   "who": "char_B",
+   "coverage": 0.483,
+   "hit": false,
+   "found": true
+  },
+  {
+   "panel": "09a",
+   "who": "char_B",
+   "coverage": 0.045,
+   "hit": false,
+   "found": false
+  },
+  {
+   "panel": "09b",
+   "who": "char_C",
+   "coverage": 0.183,
+   "hit": false,
+   "found": true
+  },
+  {
+   "panel": "09b",
+   "who": "char_A",
+   "coverage": 0.07,
+   "hit": false,
+   "found": true
+  },
+  {
+   "panel": "09c",
+   "who": "char_C",
+   "coverage": 0.029,
+   "hit": false,
+   "found": false
+  },
+  {
+   "panel": "09c",
+   "who": "char_A",
+   "coverage": 0.218,
+   "hit": false,
+   "found": true
+  },
+  {
+   "panel": "09e",
+   "who": "char_A",
+   "coverage": 0.352,
+   "hit": false,
+   "found": true
+  },
+  {
+   "panel": "09o1",
+   "who": "char_B",
+   "coverage": 0.535,
+   "hit": true,
+   "found": true
+  },
+  {
+   "panel": "09o1",
+   "who": "char_A",
+   "coverage": 0.494,
+   "hit": false,
+   "found": true
+  },
+  {
+   "panel": "09o2",
+   "who": "char_B",
+   "coverage": 0.367,
+   "hit": false,
+   "found": true
+  },
+  {
+   "panel": "09o2",
+   "who": "char_A",
+   "coverage": 0.387,
+   "hit": false,
+   "found": true
+  },
+  {
+   "panel": "09o3",
+   "who": "char_B",
+   "coverage": 0.55,
+   "hit": true,
+   "found": true
+  },
+  {
+   "panel": "09o3",
+   "who": "char_E",
+   "coverage": 0.49,
+   "hit": false,
+   "found": true
+  },
+  {
+   "panel": "09o3",
+   "who": "char_A",
+   "coverage": 0.621,
+   "hit": true,
+   "found": true
+  },
+  {
+   "panel": "10",
+   "who": "char_B",
+   "coverage": 1.0,
+   "hit": true,
+   "found": true
+  },
+  {
+   "panel": "11",
+   "who": "char_A",
+   "coverage": 0.61,
+   "hit": true,
+   "found": true
+  },
+  {
+   "panel": "11b",
+   "who": "char_B",
+   "coverage": 0.334,
+   "hit": false,
+   "found": true
+  },
+  {
+   "panel": "11b",
+   "who": "char_A",
+   "coverage": 0.37,
+   "hit": false,
+   "found": true
+  },
+  {
+   "panel": "12",
+   "who": "char_B",
+   "coverage": 0.172,
+   "hit": false,
+   "found": false
+  },
+  {
+   "panel": "12",
+   "who": "char_A",
+   "coverage": 0.417,
+   "hit": false,
+   "found": true
+  },
+  {
+   "panel": "14",
+   "who": "char_B",
+   "coverage": 0.591,
+   "hit": true,
+   "found": true
+  },
+  {
+   "panel": "14",
+   "who": "char_A",
+   "coverage": 0.74,
+   "hit": true,
+   "found": true
+  },
+  {
+   "panel": "18",
+   "who": "char_B",
+   "coverage": 0.363,
+   "hit": false,
+   "found": true
+  },
+  {
+   "panel": "18",
+   "who": "char_A",
+   "coverage": 0.505,
+   "hit": true,
+   "found": true
+  },
+  {
+   "panel": "18b",
+   "who": "char_D",
+   "coverage": 0.303,
+   "hit": false,
+   "found": true
+  },
+  {
+   "panel": "19",
+   "who": "char_A",
+   "coverage": 0.559,
+   "hit": true,
+   "found": true
+  },
+  {
+   "panel": "20",
+   "who": "char_A",
+   "coverage": 0.5,
+   "hit": true,
+   "found": true
+  },
+  {
+   "panel": "21",
+   "who": "char_B",
+   "coverage": 0.267,
+   "hit": false,
+   "found": false
+  },
+  {
+   "panel": "22",
+   "who": "char_A",
+   "coverage": 0.516,
+   "hit": true,
+   "found": true
+  },
+  {
+   "panel": "23",
+   "who": "char_A",
+   "coverage": 0.672,
+   "hit": true,
+   "found": true
+  },
+  {
+   "panel": "24",
+   "who": "char_B",
+   "coverage": 0.4,
+   "hit": false,
+   "found": true
+  },
+  {
+   "panel": "25",
+   "who": "char_B",
+   "coverage": 0.828,
+   "hit": true,
+   "found": true
+  },
+  {
+   "panel": "26",
+   "who": "char_B",
+   "coverage": 0.828,
+   "hit": true,
+   "found": true
+  },
+  {
+   "panel": "27",
+   "who": "char_B",
+   "coverage": 0.501,
+   "hit": true,
+   "found": true
+  },
+  {
+   "panel": "30",
+   "who": "object_statue",
+   "coverage": 0.198,
+   "hit": false,
+   "found": true
+  },
+  {
+   "panel": "30b",
+   "who": "char_B",
+   "coverage": 0.236,
+   "hit": false,
+   "found": true
+  },
+  {
+   "panel": "31",
+   "who": "char_A",
+   "coverage": 0.525,
+   "hit": true,
+   "found": true
+  },
+  {
+   "panel": "32",
+   "who": "char_A",
+   "coverage": 0.325,
+   "hit": false,
+   "found": true
+  },
+  {
+   "panel": "32b",
+   "who": "char_A",
+   "coverage": 0.434,
+   "hit": false,
+   "found": true
+  },
+  {
+   "panel": "32c",
+   "who": "char_B",
+   "coverage": 0.117,
+   "hit": false,
+   "found": true
+  },
+  {
+   "panel": "33",
+   "who": "char_B",
+   "coverage": 0.352,
+   "hit": false,
+   "found": true
+  },
+  {
+   "panel": "34",
+   "who": "char_A",
+   "coverage": 0.516,
+   "hit": true,
+   "found": true
+  },
+  {
+   "panel": "34",
+   "who": "char_D",
+   "coverage": 0.493,
+   "hit": false,
+   "found": true
+  },
+  {
+   "panel": "35",
+   "who": "char_D",
+   "coverage": 0.325,
+   "hit": false,
+   "found": true
+  },
+  {
+   "panel": "35b",
+   "who": "char_A",
+   "coverage": 0.205,
+   "hit": false,
+   "found": true
+  },
+  {
+   "panel": "35b",
+   "who": "char_B",
+   "coverage": 0.123,
+   "hit": false,
+   "found": false
+  },
+  {
+   "panel": "36",
+   "who": "char_B",
+   "coverage": 0.249,
+   "hit": false,
+   "found": true
+  },
+  {
+   "panel": "36b",
+   "who": "char_A",
+   "coverage": 0.352,
+   "hit": false,
+   "found": true
+  },
+  {
+   "panel": "37",
+   "who": "char_A",
+   "coverage": 0.25,
+   "hit": false,
+   "found": true
+  },
+  {
+   "panel": "37",
+   "who": "char_D",
+   "coverage": 0.525,
+   "hit": true,
+   "found": true
+  },
+  {
+   "panel": "38",
+   "who": "char_A",
+   "coverage": 0.349,
+   "hit": false,
+   "found": true
+  },
+  {
+   "panel": "38",
+   "who": "char_B",
+   "coverage": 0.286,
+   "hit": false,
+   "found": true
+  },
+  {
+   "panel": "39",
+   "who": "char_A",
+   "coverage": 0.274,
+   "hit": false,
+   "found": true
+  },
+  {
+   "panel": "39",
+   "who": "char_B",
+   "coverage": 0.371,
+   "hit": false,
+   "found": true
+  },
+  {
+   "panel": "39",
+   "who": "char_D",
+   "coverage": 0.352,
+   "hit": false,
+   "found": true
+  },
+  {
+   "panel": "39b",
+   "who": "char_B",
+   "coverage": 0.15,
+   "hit": false,
+   "found": true
+  },
+  {
+   "panel": "39b",
+   "who": "char_D",
+   "coverage": 0.0,
+   "hit": false,
+   "found": false
+  },
+  {
+   "panel": "40",
+   "who": "char_A",
+   "coverage": 0.585,
+   "hit": true,
+   "found": true
+  },
+  {
+   "panel": "40",
+   "who": "char_B",
+   "coverage": 0.236,
+   "hit": false,
+   "found": true
+  },
+  {
+   "panel": "40",
+   "who": "char_D",
+   "coverage": 0.107,
+   "hit": false,
+   "found": true
+  },
+  {
+   "panel": "41",
+   "who": "char_A",
+   "coverage": 0.699,
+   "hit": true,
+   "found": true
+  },
+  {
+   "panel": "41",
+   "who": "char_B",
+   "coverage": 1.0,
+   "hit": true,
+   "found": true
+  },
+  {
+   "panel": "41",
+   "who": "char_D",
+   "coverage": 0.765,
+   "hit": true,
+   "found": true
+  },
+  {
+   "panel": "E1",
+   "who": "char_A",
+   "coverage": 0.0,
+   "hit": false,
+   "found": false
+  },
+  {
+   "panel": "E1",
+   "who": "char_B",
+   "coverage": 0.0,
+   "hit": false,
+   "found": false
+  },
+  {
+   "panel": "E1",
+   "who": "char_D",
+   "coverage": 0.024,
+   "hit": false,
+   "found": true
+  },
+  {
+   "panel": "E2",
+   "who": "char_A",
+   "coverage": 0.078,
+   "hit": false,
+   "found": true
+  },
+  {
+   "panel": "E2",
+   "who": "char_D",
+   "coverage": 0.038,
+   "hit": false,
+   "found": true
+  },
+  {
+   "panel": "E4",
+   "who": "char_B",
+   "coverage": 0.298,
+   "hit": false,
+   "found": false
+  },
+  {
+   "panel": "E4",
+   "who": "char_D",
+   "coverage": 0.29,
+   "hit": false,
+   "found": true
+  }
+ ]
+}
